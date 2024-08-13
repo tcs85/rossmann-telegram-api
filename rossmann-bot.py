@@ -35,8 +35,8 @@ def load_dataset(store_id):
         str: A JSON string representing the loaded dataset.
     """
     # loading test dataset
-    df10 = pd.read_csv("data/test.csv")
-    df_store_raw = pd.read_csv("data/store.csv")
+    df10 = pd.read_csv("test.csv")
+    df_store_raw = pd.read_csv("store.csv")
 
     # merge test dataset + store
     df_test = pd.merge(df10, df_store_raw, how="left", on="Store")
