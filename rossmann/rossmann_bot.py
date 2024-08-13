@@ -3,7 +3,7 @@ import json
 import requests
 from flask import Flask, request, Response
 import os
-from rossmann.rossmann_bot import rossmann_bot
+
 
 #constants
 TOKEN='6529866802:AAGBVGIncX84MehWXfD-so8Pkds3A94Unn8'
