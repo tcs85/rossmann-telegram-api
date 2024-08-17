@@ -18,8 +18,13 @@ TOKEN = "6529866802:AAGBVGIncX84MehWXfD-so8Pkds3A94Unn8"
 # # Send message
 # https://api.telegram.org/bot6529866802:AAGBVGIncX84MehWXfD-so8Pkds3A94Unn8/sendMessage?chat_id=1218019388&text=hello TCS
 
-# # Webhook
+# # Webhook Local Run
 # https://api.telegram.org/bot6529866802:AAGBVGIncX84MehWXfD-so8Pkds3A94Unn8/setWebhook?url=https://6cc03cbd8f378f.lhr.life
+
+
+# # Webhook Render
+# https://api.telegram.org/bot6529866802:AAGBVGIncX84MehWXfD-so8Pkds3A94Unn8/setWebhook?url=https://rossmann-telegram-api-p11t.onrender.com
+
 
 
 def send_message(chat_id, text):
@@ -140,5 +145,5 @@ def index():
 
 if __name__ == "__main__":
     port = os.environ.get("PORT", 5000)
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=port)
 
