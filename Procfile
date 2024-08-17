@@ -1,1 +1,1 @@
-web: python rossmann-bot.py
+web: python rossmannbot.py

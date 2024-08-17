@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: rossmann-bot
+    name: rossmannbot.py
     env: python
     plan: free
     buildCommand: ""
