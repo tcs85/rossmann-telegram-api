@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: rossmann-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python3 rossmann-bot.py"
+    envVars:
+      - key: PORT
+        value: 5000
+    autoDeploy: true
